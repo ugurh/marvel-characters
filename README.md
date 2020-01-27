@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+        SEARCH MARVEL CHARACTERS
+  <br>
+    <img src="https://serving.photos.photobox.com/945218220ae742d4b23e134efcdde9264abec824159b2b2dbdb4936985df29b82429059c.jpg" alt="marvel project" >
+  <br>
+</h1>
+
+<h4 align="center">This project developed using <a href="https://github.com/facebook/create-react-app/" target="_blank">ReactJS</a> and <a href="https://developer.marvel.com/" target="_blank"> Marvel Api</a>.</h4>
 
 ## Available Scripts
 
