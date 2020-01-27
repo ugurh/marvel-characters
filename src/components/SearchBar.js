@@ -20,7 +20,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div className="row">
-                <div class="col-sm-3 col-md-3" ></div>
+                <div className="col-sm-3 col-md-3" ></div>
                 <div className="col-sm-5 col-sm-offset-2 col-md-6 search-bar">
                     <div className="input-group">
                         <input className="form-control input-lg" value={this.state.searchedKey} 
