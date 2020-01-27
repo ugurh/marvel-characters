@@ -1,12 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+import lodash from 'lodash'
 
- class CharacterList extends Component {
-    render() {
+import CharacterListItem from './CharacterListItem'
+
+const CharacterList = props => {
+    console.log(props.characters);
         return (
-            <div>
-                
+            <div className="col-md-4">
+                {lodash.map(props.characters,character => (
+                     <CharacterListItem  key={character.id} character={character} handleChangeSelectedCharacter={props.handleChangeSelectedCharacter}/>
+                ))}
             </div>
-        )
-    }
-}
+        );
+    
+};
 export default CharacterList;
