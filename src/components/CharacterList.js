@@ -6,11 +6,13 @@ import CharacterListItem from './CharacterListItem'
 const CharacterList = props => {
     console.log(props.characters);
         return (
-            <div className="col-md-4">
-                {lodash.map(props.characters,character => (
-                     <CharacterListItem  key={character.id} character={character} handleChangeSelectedCharacter={props.handleChangeSelectedCharacter}/>
-                ))}
-            </div>
+            
+                <div className="col-md-4">
+                    {lodash.map(props.characters,character => (
+                        <CharacterListItem  key={character.id} character={character} handleChangeSelectedCharacter={props.handleChangeSelectedCharacter}/>
+                    ))}
+                </div>
+           
         );
     
 };

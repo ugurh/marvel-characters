@@ -23,7 +23,8 @@ class App extends Component {
     this.state = {
       characters: null,
       selectedCharacter:null,
-    }
+    };
+    this.handleChangeSelectedCharacter = this.handleChangeSelectedCharacter.bind(this);
   }
 
   componentDidMount = () => { //componentler render edilmeden önce çalışır.
@@ -37,19 +38,33 @@ class App extends Component {
     });
   }
 
+  onSearchButtonClick = (searchedKey) =>{
+    $.getJSON(`${API_URL}${auth}&limit=5&nameStartsWith=${searchedKey}`, result => {
+      const fetchedCharacters = result.data.results;
+      this.setState({ characters: fetchedCharacters });
+    });
+  }
+
   handleChangeSelectedCharacter = (character) =>{
     this.setState({selectedCharacter:character});
-    console.log("karatter değişti.");
   }
 
   render() {
     if(!this.state.characters)
-      return <h2>Loading...</h2>;
+      return (
+        <div class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      );
     return (
-      <div className="App">
-        <SearchBar /> 
-        <CharacterList characters={this.state.characters} handleChangeSelectedCharacter={this.handleChangeSelectedCharacter}/>
-        <Detail character ={this.state.selectedCharacter || this.state.characters[0]}/>
+      <div className="container">
+          <SearchBar onSearchButtonClick={this.onSearchButtonClick}/> 
+          <div className="row">
+             <CharacterList characters={this.state.characters} handleChangeSelectedCharacter={this.handleChangeSelectedCharacter}/>
+             <Detail character ={this.state.selectedCharacter || this.state.characters[0]}/>
+          </div>        
       </div>
     );
   }
