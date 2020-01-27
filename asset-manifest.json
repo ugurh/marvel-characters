@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/marvel-characters/static/css/main.10b3e9ee.chunk.css",
+    "main.js": "/marvel-characters/static/js/main.6ef026e1.chunk.js",
+    "main.js.map": "/marvel-characters/static/js/main.6ef026e1.chunk.js.map",
+    "runtime-main.js": "/marvel-characters/static/js/runtime-main.2f7229d2.js",
+    "runtime-main.js.map": "/marvel-characters/static/js/runtime-main.2f7229d2.js.map",
+    "static/css/2.67123b20.chunk.css": "/marvel-characters/static/css/2.67123b20.chunk.css",
+    "static/js/2.a0138431.chunk.js": "/marvel-characters/static/js/2.a0138431.chunk.js",
+    "static/js/2.a0138431.chunk.js.map": "/marvel-characters/static/js/2.a0138431.chunk.js.map",
+    "index.html": "/marvel-characters/index.html",
+    "precache-manifest.3c72153e65b29e2c2ddd6bbc55da61f3.js": "/marvel-characters/precache-manifest.3c72153e65b29e2c2ddd6bbc55da61f3.js",
+    "service-worker.js": "/marvel-characters/service-worker.js",
+    "static/css/2.67123b20.chunk.css.map": "/marvel-characters/static/css/2.67123b20.chunk.css.map",
+    "static/css/main.10b3e9ee.chunk.css.map": "/marvel-characters/static/css/main.10b3e9ee.chunk.css.map",
+    "static/js/2.a0138431.chunk.js.LICENSE": "/marvel-characters/static/js/2.a0138431.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f7229d2.js",
+    "static/css/2.67123b20.chunk.css",
+    "static/js/2.a0138431.chunk.js",
+    "static/css/main.10b3e9ee.chunk.css",
+    "static/js/main.6ef026e1.chunk.js"
+  ]
+}
